@@ -1,0 +1,346 @@
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-datepicker-popup.dropdown-menu{display:block;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Consultas - Agência Nacional de Vigilância Sanitária</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="scripts/app/components/anvs-multiselect/anvs-multiselect.css">
+
+    <!-- build:css assets/styles/vendor.css -->
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="vendor/open-sans/css/open-sans.css">
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/AngularJS-Toaster/toaster.css">
+    <link rel="stylesheet" href="vendor/ng-table/dist/ng-table.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/angular-loading/angular-loading.css">
+    <link rel="stylesheet" href="vendor/angular-tree-control/css/tree-control.css">
+    <link rel="stylesheet" href="vendor/angular-tree-control/css/tree-control-attribute.css">
+    <link rel="stylesheet" href="vendor/angular-ui-select/dist/select.min.css">
+    <!-- endbuild -->
+    <!-- build:css assets/styles/app.css -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <script type="text/javascript" async="" defer="" src="//analiseweb.anvisa.gov.br/piwik.js"></script><script src="assets/scripts/base64.js"></script>
+    <script src="assets/scripts/upperCaseF.js"></script>
+    <!-- endbuild -->
+<style type="text/css"></style></head>
+<body ng-app="consultas" class="ng-scope">
+
+<div id="barra-brasil" class="no-print"><div id="wrapper-barra-brasil"><div class="brasil-flag"><a href="http://brasil.gov.br" class="link-barra">Brasil</a></div><span class="acesso-info"><a href="http://www.servicos.gov.br/?pk_campaign=barrabrasil&amp;orgao=http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/36687" class="link-barra" id="barra-brasil-orgao">Serviços</a></span><nav><ul class="list"><li><a href="#" id="menu-icon"></a></li><li class="list-item first"><a href="http://brasil.gov.br/barra#participe" class="link-barra">Participe</a></li><li class="list-item"><a href="http://brasil.gov.br/barra#acesso-informacao" class="link-barra">Acesso à informação</a></li><li class="list-item"><a href="http://www.planalto.gov.br/legislacao" class="link-barra">Legislação</a></li><li class="list-item last last-item"><a href="http://brasil.gov.br/barra#orgaos-atuacao-canais" class="link-barra">Canais</a></li></ul></nav><nav id="brasil-vlibras"><ul><li><a class="logo-vlibras" href="#"></a><a href="http://www.vlibras.gov.br/" class="link-vlibras">Acessível em Libras</a></li></ul></nav></div></div>
+
+<header id="header-portal" class="no-print">
+    <div class="container max-width">
+        <div class="row-custom">
+            <div class="col-md-6 menu-ancoras hidden-xs">
+                <ul>
+                    <li>
+                        <a accesskey="1" href="#conteudo">
+                            Ir para o conteúdo <span>1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a accesskey="2" href="#menu">
+                            Ir para o menu <span>2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a accesskey="3" href="#busca">
+                            Ir para a busca <span>3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a accesskey="4" href="#footer">
+                            Ir para o rodapé <span>4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-12 menu-acessibilidade">
+                <ul>
+                    <li>
+                        <a href="acessibilidade" title="Acessibilidade" accesskey="5">Acessibilidade</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Alto Contraste" id="alto_contraste_id" accesskey="6">Alto Contraste</a>
+                    </li>
+                    <li>
+                        <a href="mapa-do-site" title="Mapa do Site" accesskey="7">Mapa do Site</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-custom">
+            <div class="col-md-7 col-sm-12">
+                <a href="#/login" title="Ir para a página inicial" class="titulo-portal">
+                    <h1 translate="" class="ng-scope">Consultas</h1>
+                    <p>Anvisa - Agência Nacional de Vigilância Sanitária</p>
+                </a>
+            </div>
+
+            <!-- uiView: perfil --><!-- uiView: perfil --><div ui-view="perfil" class="ng-scope"></div>
+
+        </div>
+    </div>
+
+    <!-- section-->
+    <!-- uiView: menu --><!-- uiView: menu --><div ui-view="menu" class="ng-scope"></div>
+    <!-- fim - section-->
+</header>
+
+
+<div id="toast-container" ng-class="[config.position, config.animation]" toaster-options="{'close-button': true}" class="ng-scope toast-top-right"><!-- ngRepeat: toaster in toasters --></div>
+
+<div class="container ng-scope" dw-loading="content" dw-loading-options="{text: ('global.carregando' | translate) }">
+    <ui-breadcrumbs displayname-property="data.displayName" template-url="vendor/angular-utils-ui-breadcrumbs/uiBreadcrumbs.tpl.html" class="ng-isolate-scope"><ol class="breadcrumb">
+  <!-- ngRepeat: crumb in breadcrumbs --><li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }" class="ng-scope" style=""><!-- ngIf: !$last --><a ui-sref="main" ng-if="!$last" class="ng-binding ng-scope" href="#/">Consultas&nbsp;</a><!-- end ngIf: !$last --><span ng-show="$last" class="ng-binding ng-hide">Consultas</span>
+  </li><!-- end ngRepeat: crumb in breadcrumbs --><li ng-repeat="crumb in breadcrumbs" ng-class="{ active: $last }" class="ng-scope active" style=""><!-- ngIf: !$last --><span ng-show="$last" class="ng-binding">Funcionamento de Empresa Nacional</span>
+  </li><!-- end ngRepeat: crumb in breadcrumbs -->
+</ol></ui-breadcrumbs>
+
+    <!-- uiView: content --><div ui-view="content" class="ng-scope" style=""><form name="formulario" ng-submit="consultar()" class="ng-pristine ng-valid ng-scope ng-submitted" style="">
+    <div class="panel panel-default">
+        <div class="panel-heading text-center ng-scope" translate="">Critérios para Consulta</div>
+        <div class="panel-body row">
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">CNPJ</label>
+                <div class="row ng-isolate-scope ng-valid" ng-model="filter.cnpj" style="">
+    <div class="col-sm-6 col-md-5">
+        <div class="input-group">
+            <input class="form-control ng-pristine ng-untouched ng-valid" ng-change="typed()" ng-model="empresa.cnpj" cnpj="" ng-disabled="ngDisabled">
+            <a class="btn btn-default input-group-addon ng-isolate-scope" ng-disabled="ngDisabled" title="" modal-anvisa="modalBuscaEmpresas">
+                <i class="glyphicon glyphicon-search"></i>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-7">
+        <input class="form-control ng-pristine ng-untouched ng-valid" readonly="" ng-model="empresa.razaoSocial">
+    </div>
+</div>
+            </div>
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">Atividade</label>
+                <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.atividade" ng-options="ta.id.toString() as ta.descricao for ta in tiposAtividade"><option value="" class="" selected="selected"></option><option label="Armazenagem Logistica" value="string:25">Armazenagem Logistica</option><option label="Armazenar" value="string:1">Armazenar</option><option label="BENEFICIAR" value="string:63">BENEFICIAR</option><option label="BENEFICIAR" value="string:64">BENEFICIAR</option><option label="BENEFICIAR" value="string:65">BENEFICIAR</option><option label="BENEFICIAR" value="string:66">BENEFICIAR</option><option label="Colheita" value="string:83">Colheita</option><option label="Comercializar" value="string:19">Comercializar</option><option label="Comércio" value="string:51">Comércio</option><option label="Cultivo" value="string:84">Cultivo</option><option label="Dispensar" value="string:55">Dispensar</option><option label="Dispensação de medicamentos contendo substâncias sujeitas ao controle especial" value="string:49">Dispensação de medicamentos contendo substâncias sujeitas ao controle especial</option><option label="Dispensação de medicamentos não sujeitos ao controle especial" value="string:45">Dispensação de medicamentos não sujeitos ao controle especial</option><option label="Distribuir" value="string:3">Distribuir</option><option label="Embalar" value="string:2">Embalar</option><option label="Envasar" value="string:71">Envasar</option><option label="Ervanário" value="string:50">Ervanário</option><option label="Esterilizacao" value="string:13">Esterilizacao</option><option label="Expedir" value="string:18">Expedir</option><option label="Exportar" value="string:4">Exportar</option><option label="Extrair" value="string:22">Extrair</option><option label="FABRICAR" value="string:67">FABRICAR</option><option label="Fabricante Legal" value="string:87">Fabricante Legal</option><option label="Fabricar" value="string:5">Fabricar</option><option label="Fabricar Parcialmente" value="string:72">Fabricar Parcialmente</option><option label="Fabricar Totalmente" value="string:73">Fabricar Totalmente</option><option label="Fitoterapicos" value="string:12">Fitoterapicos</option><option label="Fracionamento" value="string:60">Fracionamento</option><option label="Fracionar" value="string:15">Fracionar</option><option label="Importar" value="string:6">Importar</option><option label="Importar por conta e ordem de terceiro detentor de produto regularizado na ANVIS" value="string:58">Importar por conta e ordem de terceiro detentor de produto regularizado na ANVIS</option><option label="Laboratórios ou Instituições de Pesquisa" value="string:85">Laboratórios ou Instituições de Pesquisa</option><option label="MATÉRIAS-PRIMAS PARA PROD. DE HIGIENE" value="string:62">MATÉRIAS-PRIMAS PARA PROD. DE HIGIENE</option><option label="Manipular" value="string:11">Manipular</option><option label="Manipulação de produtos estéreis" value="string:74">Manipulação de produtos estéreis</option><option label="Manipulação de produtos magistrais" value="string:47">Manipulação de produtos magistrais</option><option label="Manipulação de produtos oficinais" value="string:46">Manipulação de produtos oficinais</option><option label="Não Infomado" value="string:52">Não Infomado</option><option label="Outras" value="string:10">Outras</option><option label="Plantio" value="string:82">Plantio</option><option label="Prestar Serviço de" value="string:53">Prestar Serviço de</option><option label="Prestação de Serviços Farmacêuticos" value="string:48">Prestação de Serviços Farmacêuticos</option><option label="Produzir" value="string:7">Produzir</option><option label="Purificar" value="string:21">Purificar</option><option label="Reembalar" value="string:8">Reembalar</option><option label="Reesterilizar" value="string:16">Reesterilizar</option><option label="Representar" value="string:14">Representar</option><option label="Reprocessar" value="string:17">Reprocessar</option><option label="Sintetizar" value="string:23">Sintetizar</option><option label="Transformar" value="string:20">Transformar</option><option label="Transformação" value="string:61">Transformação</option><option label="Transportar" value="string:9">Transportar</option><option label="Unidade Fabril" value="string:86">Unidade Fabril</option></select>
+            </div>
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">Nº da Autorização</label>
+                <input class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.autorizacao" mask="9.99.999-9">
+            </div>
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">NUVS</label>
+                <input class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.novaAutorizacao">
+            </div>
+            <div class="form-group col-sm-6">
+                <label translate="" class="ng-scope">UF</label>
+                <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.uf" ng-change="atualizaCidades()" ng-options="uf.id as uf.id + ' - ' + uf.nome for uf in ufs"><option value="" class="" selected="selected"></option><option label="99 - NÃO INFORMADO / SEM INFORMAÇÃO" value="string:99">99 - NÃO INFORMADO / SEM INFORMAÇÃO</option><option label="AC - Acre                                              " value="string:AC">AC - Acre                                              </option><option label="AL - Alagoas                                           " value="string:AL">AL - Alagoas                                           </option><option label="AM - Amazonas                                          " value="string:AM">AM - Amazonas                                          </option><option label="AP - Amapá                                             " value="string:AP">AP - Amapá                                             </option><option label="BA - Bahia                                             " value="string:BA">BA - Bahia                                             </option><option label="CE - Ceará                                             " value="string:CE">CE - Ceará                                             </option><option label="DF - Distrito Federal                                  " value="string:DF">DF - Distrito Federal                                  </option><option label="ES - Espírito Santo                                    " value="string:ES">ES - Espírito Santo                                    </option><option label="EX - Exterior" value="string:EX">EX - Exterior</option><option label="GO - Goiás                                             " value="string:GO">GO - Goiás                                             </option><option label="MA - Maranhão                                          " value="string:MA">MA - Maranhão                                          </option><option label="MG - Minas Gerais                                      " value="string:MG">MG - Minas Gerais                                      </option><option label="MS - Mato Grosso do Sul                                " value="string:MS">MS - Mato Grosso do Sul                                </option><option label="MT - Mato Grosso                                       " value="string:MT">MT - Mato Grosso                                       </option><option label="PA - Pará                                              " value="string:PA">PA - Pará                                              </option><option label="PB - Paraíba                                           " value="string:PB">PB - Paraíba                                           </option><option label="PE - Pernambuco" value="string:PE">PE - Pernambuco</option><option label="PI - Piauí                                             " value="string:PI">PI - Piauí                                             </option><option label="PR - Paraná                                            " value="string:PR">PR - Paraná                                            </option><option label="RJ - Rio de Janeiro                                    " value="string:RJ">RJ - Rio de Janeiro                                    </option><option label="RN - Rio Grande do Norte                               " value="string:RN">RN - Rio Grande do Norte                               </option><option label="RO - Rondônia                                          " value="string:RO">RO - Rondônia                                          </option><option label="RR - Roraima                                           " value="string:RR">RR - Roraima                                           </option><option label="RS - Rio Grande do Sul                                 " value="string:RS">RS - Rio Grande do Sul                                 </option><option label="SC - Santa Catarina                                    " value="string:SC">SC - Santa Catarina                                    </option><option label="SE - Sergipe                                           " value="string:SE">SE - Sergipe                                           </option><option label="SP - São Paulo                                         " value="string:SP">SP - São Paulo                                         </option><option label="TO - Tocantins                                         " value="string:TO">TO - Tocantins                                         </option></select>
+            </div>
+            <div class="form-group  col-sm-6">
+                <label translate="" class="ng-scope">Cidade</label>
+                <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.cidade" ng-disabled="filter.uf == null" ng-options="cidade.id.toString() as cidade.nome for cidade in cidades" disabled="disabled"><option value="" class="" selected="selected"></option></select>
+            </div>
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">Área de Produto</label>
+                <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.area" ng-options="area.toString() as ('funcionamento.area_produto.' + area | translate) for area in areas"><option value="" class="" selected="selected"></option><option label="Medicamentos" value="string:10">Medicamentos</option><option label="Medicamentos Controlados" value="string:12">Medicamentos Controlados</option><option label="Cosméticos" value="string:20">Cosméticos</option><option label="Saneantes" value="string:30">Saneantes</option><option label="Alimentos" value="string:40">Alimentos</option><option label="Produto para Saúde" value="string:80">Produto para Saúde</option><option label="Portos, Aeroportos, Fronteiras e Recintos Alfandegados" value="string:P0">Portos, Aeroportos, Fronteiras e Recintos Alfandegados</option></select>
+            </div>
+            <div class="form-group col-sm-12">
+                <label translate="" class="ng-scope">Situação</label>
+                <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="filter.situacao">
+                    <option value=""></option>
+                    <option value="A" translate="" class="ng-scope">Ativa</option>
+                    <option value="I" translate="" class="ng-scope">Inativa</option>
+                </select>
+            </div>
+            <!-- ngIf: !captchaOk() --><div class="text-center form-group col-sm-12 ng-scope" ng-if="!captchaOk()">
+                <div class="row ng-isolate-scope">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+<!--         <div class="text-center">
+            <img style="max-width:150px" ng-attr-src="api/app/captcha/{{id}}.jpg" />
+            <div class="input-group">
+                <input required ng-disabled="valido" class="form-control" ng-model="captcha" />
+                <a href="" class="btn btn-default input-group-addon"
+                   ng-disabled="valido" ng-click="load()" ng-keypress="load()">
+                    <i class="fa fa-refresh"></i>
+                </a>
+                <a href="" class="btn btn-default input-group-addon"
+                   ng-disabled="!captcha.length || valido"
+                   ng-click="validate()" ng-keypress="validate()">
+                    <i class="fa fa-check"></i>
+                </a>
+            </div>
+        </div>
+        <div class="text-left" translate>mensagens.MSG-996</div> -->
+    </div>
+    <div class="col-md-4"></div>
+</div>
+                <ng-messages for="field.$$parentForm.$submitted &amp;&amp; field.$error" role="alert" field="formulario.captcha" class="ng-isolate-scope ng-inactive" style="">
+    <!-- ngMessagesInclude: default-error-messages --><!-- ngMessage: required -->
+<!-- ngMessage: email -->
+<!-- ngMessage: cpf_validate -->
+<!-- ngMessage: minlength -->
+<!-- ngMessage: maxlength -->
+<!-- ngMessage: backend -->
+<!-- ngMessage: date -->
+</ng-messages>
+            </div><!-- end ngIf: !captchaOk() -->
+        </div>
+        <div class="panel-footer text-center">
+            <input class="btn btn-primary" type="submit" value="Consultar">
+            <input class="btn btn-default" type="reset" ng-click="limpa()" value="Limpar">
+        </div>
+    </div>
+</form></div>
+<div class="dw-loading dw-loading-overlay"><div class="dw-loading-body"><div class="dw-loading-spinner"></div><div class="dw-loading-text">global.carregando</div></div></div><div class="dw-loading dw-loading-overlay"><div class="dw-loading-body"><div class="dw-loading-spinner"></div><div class="dw-loading-text">Carregando...</div></div></div></div>
+
+<!-- build:js scripts/vendor.js -->
+<script src="vendor/modernizr/modernizr.js"></script>
+<script src="vendor/jquery/dist/jquery.js"></script>
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-animate/angular-animate.js"></script>
+<script src="vendor/AngularJS-Toaster/toaster.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="vendor/angular-confirm-modal/angular-confirm.min.js"></script>
+<script src="vendor/angular-i18n/angular-locale_pt-br.js"></script>
+<script src="vendor/angular-messages/angular-messages.js"></script>
+<script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+<script src="vendor/angular-translate/angular-translate.js"></script>
+<script src="vendor/messageformat/messageformat.js"></script>
+<script src="vendor/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js"></script>
+<script src="vendor/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+<script src="vendor/angular-ui-mask/dist/mask.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="vendor/angular-ui-select/dist/select.min.js"></script>
+<script src="vendor/angular-utils-ui-breadcrumbs/uiBreadcrumbs.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="vendor/jquery-mask-plugin/dist/jquery.mask.js"></script>
+<script src="vendor/ng-table/dist/ng-table.min.js"></script>
+<script src="vendor/lodash/lodash.js"></script>
+<script src="vendor/restangular/dist/restangular.js"></script>
+<script src="vendor/stringjs/dist/string.min.js"></script>
+<script src="vendor/messageformat/locale/pt.js"></script>
+<script src="vendor/jquery-form/jquery.form.js"></script>
+<script src="vendor/angular-input-masks/angular-input-masks-standalone.min.js"></script>
+<script src="vendor/moment/min/moment.min.js"></script>
+<script src="vendor/moment/min/moment-with-locales.min.js"></script>
+<script src="vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="vendor/angular-jwt/dist/angular-jwt.min.js"></script>
+<script src="vendor/angular-permission/dist/angular-permission.min.js"></script>
+<script src="vendor/angular-permission/dist/angular-permission-ui.min.js"></script>
+<script src="vendor/spin.js/spin.js"></script>
+<script src="vendor/angular-loading/angular-loading.min.js"></script>
+<script src="vendor/file-saver/FileSaver.js"></script>
+<script src="vendor/angular-tree-control/angular-tree-control.js"></script>
+<!-- endbuild -->
+<!-- build:js scripts/app.js -->
+<script src="scripts/app/app.js"></script>
+<!-- Piwik -->
+<script src="scripts/app/piwik.js"></script><img src="//analiseweb.anvisa.gov.br/piwik.php?idsite=42" style="border:0;" alt="">
+
+<!-- Aplicação -->
+<script src="scripts/app/main/main.controller.js"></script>
+<script src="scripts/app/medicamentos/medicamentos.controller.js"></script>
+<script src="scripts/app/alimentos/alimentos.controller.js"></script>
+<script src="scripts/app/produtos/produtos.controller.js"></script>
+<script src="scripts/app/captcha/captcha.controller.js"></script>
+<script src="scripts/app/monitoramento/monitoramento.controller.js"></script>
+<script src="scripts/app/funcionamento/funcionamento.controller.js"></script>
+<script src="scripts/app/documentos/documentos.controller.js"></script>
+<script src="scripts/app/certificado/filtro/filtro.controller.js"></script>
+<script src="scripts/app/certificado/result/result.controller.js"></script>
+<script src="scripts/app/certificado/detail/detail.controller.js"></script>
+<script src="scripts/app/certificado/certificado.controller.js"></script>
+<script src="scripts/app/certificado/certificado-medicamento.controller.js"></script>
+<script src="scripts/app/dossie/dossie.controller.js"></script>
+<script src="scripts/app/cosmeticos/cosmeticos.controller.js"></script>
+<script src="scripts/app/cosmeticos/registrado/cosmeticos.controller.js"></script>
+<script src="scripts/app/cosmeticos/notificado/cosmeticos.controller.js"></script>
+<script src="scripts/app/cosmeticos/regularizado/cosmeticos.controller.js"></script>
+<script src="scripts/app/saude/saude.controller.js"></script>
+<script src="scripts/app/saneantes/saneantes.controller.js"></script>
+<script src="scripts/app/saneantes/produto/saneantes.controller.js"></script>
+<script src="scripts/app/saneantes/notificado/saneantes.controller.js"></script>
+<script src="scripts/app/genericos/genericos.controller.js"></script>
+<script src="scripts/app/filas/fila.controller.js"></script>
+<script src="scripts/app/listas/lista.controller.js"></script>
+<script src="scripts/app/tabaco/tabaco.controller.js"></script>
+<script src="scripts/app/cannabis/cannabis.controller.js"></script>
+<script src="scripts/app/pareceres/parecer.controller.js"></script>
+<script src="scripts/app/bulario/bulario.controller.js"></script>
+<script src="scripts/app/nomesTecnicos/nomesTecnicos.controller.js"></script>
+
+<!-- Services -->
+<script src="scripts/services/app.service.js"></script>
+<script src="scripts/services/alimento.service.js"></script>
+<script src="scripts/services/consulta.service.js"></script>
+<script src="scripts/services/certificado.service.js"></script>
+<script src="scripts/services/dossie.service.js"></script>
+<script src="scripts/services/empresa.service.js"></script>
+<script src="scripts/services/empresaInternacional.service.js"></script>
+<script src="scripts/services/substancia.service.js"></script>
+<script src="scripts/services/categoria.produto.service.js"></script>
+<script src="scripts/services/monitoramento.service.js"></script>
+<script src="scripts/services/uf.service.js"></script>
+<script src="scripts/services/pais.service.js"></script>
+<script src="scripts/services/documento.service.js"></script>
+<script src="scripts/services/valida.input.service.js"></script>
+<script src="scripts/services/medicamento.service.js"></script>
+<script src="scripts/services/fila.service.js"></script>
+<script src="scripts/services/grupoPopulacional.service.js"></script>
+<script src="scripts/services/viaAdministracao.service.js"></script>
+<script src="scripts/services/composicaoAlergenico.service.js"></script>
+<script src="scripts/services/cannabis.service.js"></script>
+<script src="scripts/services/tabaco.service.js"></script>
+<script src="scripts/services/parecer.service.js"></script>
+<script src="scripts/services/bulario.service.js"></script>
+<script src="scripts/services/informacaoRegulatoria.service.js"></script>
+
+<!-- endbuild -->
+<!-- build:js scripts/components.js -->
+
+<!-- Componentes -->
+<script src="scripts/components/components.js"></script>
+<script src="scripts/components/filters/mask.filter.js"></script>
+<script src="scripts/components/message/message.directive.js"></script>
+<script src="scripts/components/message/message.factory.js"></script>
+<script src="scripts/components/confirm/confirm.service.js"></script>
+<script src="scripts/components/pagination/ngtableparams.anvisa.js"></script>
+<script src="scripts/components/date/datepicker.anvisa.directive.js"></script>
+<script src="scripts/components/date/date-month-year-picker.anvisa.directive.js"></script>
+<script src="scripts/components/modal-form/modal-form.directive.js"></script>
+<script src="scripts/components/anvs-form-group/form-group.directive.js"></script>
+<script src="scripts/components/anvs-label/label.directive.js"></script>
+<script src="scripts/components/anvs-message/message.directive.js"></script>
+<script src="scripts/components/confirm/confirm.service.js"></script>
+<script src="scripts/components/pagination/ngtableparams.anvisa.js"></script>
+<script src="scripts/components/owl-carousel/owl-carousel.directive.js"></script>
+<script src="scripts/components/autocomplete/autocomplete.directive.js"></script>
+<script src="scripts/app/components/input-empresa/input-empresa.directive.js"></script>
+<script src="scripts/app/components/input-empresa-internacional/input-empresa-internacional.directive.js"></script>
+<script src="scripts/app/components/input-empresa-dossie/input-empresa-dossie.directive.js"></script>
+<script src="scripts/app/components/input-substancia/input-substancia.directive.js"></script>
+<script src="scripts/app/components/captcha/captcha.directive.js"></script>
+<script src="scripts/app/components/monitoramento/monitoramento.directive.js"></script>
+<script src="scripts/app/components/monitoramentoGenerico/monitoramento.directive.js"></script>
+<script src="scripts/app/components/input-numero/input-numero.directive.js"></script>
+<script src="scripts/app/components/anvs-radio/anvs-radio.directive.js"></script>
+<script src="scripts/app/components/anvs-radio/anvs-radio-sim-nao.directive.js"></script>
+<script src="scripts/app/components/anvs-select/anvs-select.directive.js"></script>
+<script src="scripts/app/components/anvs-multiselect/anvs-multiselect.directive.js"></script>
+<script src="scripts/app/components/input-search/input-search.directive.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+</script>
+<!-- endbuild -->
+
+
+</body></html>
